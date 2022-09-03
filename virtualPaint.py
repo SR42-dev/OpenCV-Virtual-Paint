@@ -10,6 +10,9 @@ Possible features to add :
 import cv2
 import numpy as np
 
+def empty(a):  # argument required
+    pass
+
 cap = cv2.VideoCapture(0) # 0 - default webcam
 cap.set(3, 720) # width
 cap.set(4, 480) # height
@@ -31,9 +34,6 @@ cv2.resizeWindow('Trackbars', 243, 150)
 cv2.createTrackbar('Write?', 'Trackbars', 0, 1, empty)
 cv2.createTrackbar('Lefty?', 'Trackbars', 0, 1, empty)
 cv2.createTrackbar('Thickness', 'Trackbars', 1, 16, empty)
-
-def empty(a):  # argument required
-    pass
 
 def findColor(img, myColors, myColorValues) :
 
